@@ -209,15 +209,14 @@
 
     // PENTING: Ganti tulisan di bawah ini dengan kode dari Project Firebase Anda
     // agar data bisa tersimpan permanen saat dionlinekan di Vercel.
-    const konfigurasiFirebaseAnda = {
-      apiKey: "GANTI_DENGAN_API_KEY_ANDA",
-      authDomain: "project-anda.firebaseapp.com",
-      projectId: "project-anda",
-      storageBucket: "project-anda.appspot.com",
-      messagingSenderId: "123456789",
-      appId: "1:123456789:web:abcdefghij"
+ const firebaseConfig = {
+      apiKey: "AIzaSyBxxxxxx-contoh-kode-asli-anda",
+      authDomain: "bukutamudigital-12345.firebaseapp.com",
+      projectId: "bukutamudigital-12345",
+      storageBucket: "bukutamudigital-12345.firebasestorage.app",
+      messagingSenderId: "9876543210",
+      appId: "1:9876543210:web:abcdef12345"
     };
-
     // Ini trik supaya database tetap bisa dicoba di halaman preview Canvas
     const activeConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : konfigurasiFirebaseAnda;
     const appId = typeof __app_id !== 'undefined' ? __app_id : 'buku-tamu-app';
