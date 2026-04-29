@@ -48,7 +48,9 @@
     <div class="absolute bottom-0 right-0 w-40 h-40 bg-amber-800 rounded-tl-full opacity-50"></div>
     
     <div class="max-w-5xl mx-auto text-center relative z-10">
-      <i class="fa-solid fa-star text-amber-400 text-4xl mb-3"></i>
+      <!-- Mengganti Ikon Bintang dengan Logo Kab Pekalongan -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Lambang_Kabupaten_Pekalongan.png" alt="Logo Kab Pekalongan" class="h-20 md:h-24 mx-auto mb-4 object-contain drop-shadow-md" onerror="this.onerror=null; this.src='https://via.placeholder.com/100?text=Logo';">
+      
       <h1 class="text-3xl md:text-5xl font-bold mb-2 tracking-wide">Buku Tamu Digital</h1>
       <p class="text-lg md:text-xl text-amber-200/90 font-light mb-8">Stand Pameran Kebudayaan Kab. Pekalongan</p>
       
@@ -255,7 +257,7 @@
 
     // PENTING: Paste kode asli Firebase Anda di dalam kurung kurawal di bawah ini!
     // Ambil dari Firebase > Project settings > Your apps > Config
- const firebaseConfig = {
+  const firebaseConfig = {
   apiKey: "AIzaSyClU5eRaL2iUgyfSdO_XsfReMc62r99Eqo",
   authDomain: "bukutamudigital-ef007.firebaseapp.com",
   projectId: "bukutamudigital-ef007",
@@ -263,7 +265,6 @@
   messagingSenderId: "787326429081",
   appId: "1:787326429081:web:601dcaf88cda7e99219508"
 };
-
 
     // Ini memastikan nama variabel cocok saat Anda mem-paste kode dari Firebase
     const activeConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : firebaseConfig;
